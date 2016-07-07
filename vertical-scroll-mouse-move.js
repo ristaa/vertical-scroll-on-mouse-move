@@ -1,4 +1,4 @@
-$(function(){
+(function($){
   
     var $container    = $("#container"),
         $blocks    = $("#blocks"),
@@ -15,4 +15,4 @@ $(function(){
     setInterval(function(){
 		  $blocks.css({marginTop: - mousePos*hDiff });
 	  }, 10);
-});
+})(jQuery);
