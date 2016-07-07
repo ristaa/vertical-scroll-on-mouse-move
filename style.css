@@ -1,4 +1,4 @@
-#container{
+#container {
   position: relative;
   margin-top: 100px;
   margin-left: 100px;
@@ -7,32 +7,27 @@
   width: 320px;
   font-size: 24px;
   cursor: pointer;
-  
-  #blocks{
-      padding: 40px;
-      background: lightblue;
-      position: absolute;
-      width: ~"calc(100% - 80px)";
-      top: 0;
-      white-space: nowrap;
-      text-align: center;
-      cursor: pointer;
-    
-      .block{
-        padding: 10px;
-        cursor: pointer;
-      }
-  }
 }
-
-#container #blocks .block:nth-child(3n){
-    background: BurlyWood ;
+#container #blocks {
+  padding: 40px;
+  background: lightblue;
+  position: absolute;
+  width: calc(100% - 80px);
+  top: 0;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
 }
-
-#container #blocks .block:nth-child(3n+1){
-    background: FireBrick;
+#container #blocks .block {
+  padding: 10px;
+  cursor: pointer;
 }
-
-#container #blocks .block:nth-child(3n+2){
-    background: LightSlateGrey;
+#container #blocks .block:nth-child(3n) {
+  background: BurlyWood ;
+}
+#container #blocks .block:nth-child(3n+1) {
+  background: FireBrick;
+}
+#container #blocks .block:nth-child(3n+2) {
+  background: LightSlateGrey;
 }
